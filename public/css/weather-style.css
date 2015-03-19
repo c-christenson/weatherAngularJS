@@ -23,6 +23,11 @@ main {
   background-size: cover;
 }
 
+.weathericon {
+  height: 50px;
+  width: 50px;
+}
+
 span {
   margin-top: -6px;
   display: block;

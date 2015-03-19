@@ -7,5 +7,8 @@ weatherApp.controller('weatherAppController', function($scope, $resource) {
     $scope.searchResult = searchResource.get({
       q: $scope.searchTerm
     });
+
+    $scope.iconUrl = "http://openweathermap.org/img/w/"
+
   };
 });
