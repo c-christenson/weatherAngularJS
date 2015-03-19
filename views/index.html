@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Weather App</title>
-    <link rel="stylesheet" href="css/weather-style.css">
+    <link rel="stylesheet" href="./css/weather-style.css">
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/angular/angular.js"></script>
     <script src="/bower_components/angular-resource/angular-resource.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/weatherAppController.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/weatherAppController.js"></script>
   </head>
 
-  <body ng-controller="weatherAppController">
+  <body  ng-controller="weatherAppController">
 <!--     <main class="shadow">
       <div class="icon">
         <img src="images/snow.svg">
@@ -20,13 +20,15 @@
       <span class="city"></span>
       <span class="conditions"></span> -->
   <!--   </main> -->
-      <form action="#">
-          <input type="text" ng-model="searchTerm" ng-change="doSearch()" placeholder="Please enter city">
+      <form id="inputForm">
+          <input type="text" ng-model="searchTerm" placeholder="Please enter city">
           <input type="submit" ng-click="doSearch()">
       </form>
-        <ul class="list-group" ng-repeat="user in searchResult.items">
+        <ul class="list-group">
           <li>
-            <img ng-src="{{user._______l}}">
+            <a> {{searchResult.name}} </a><br>
+            <a> {{searchResult.weather[0].description}} </a><br>
+            <a> {{searchResult.main.temp}} </a>
           </li>
         </ul>
 <!--     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>

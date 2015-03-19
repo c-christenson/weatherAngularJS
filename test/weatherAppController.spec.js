@@ -10,4 +10,8 @@ describe('weatherAppController', function() {
       $scope: scope
     });
   }));
+
+  
+
+  
 });
